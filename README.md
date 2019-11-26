@@ -5,7 +5,7 @@ Semantic Bottleneck Scene Generation
 <table align=center width=850px>
   <center><h1>Paper</h1></center>
   <tr>
-  <td width=400px align=left>
+  <td width=400px align=left width=384>
   <!-- <p style="margin-top:4px;"></p> -->
   <a href="https://people.eecs.berkeley.edu/~sazadi/SemanticGAN/thumbnail.jpg"><img style="height:200px" src="https://people.eecs.berkeley.edu/~sazadi/SemanticGAN/thumbnail.jpg"/></a>
   <center>

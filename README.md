@@ -1,6 +1,6 @@
 # SB-GAN
 <!-- <img src='imgs/teaser_SBGAN.jpg' align="right" width=384> -->
-<center><h1>Semantic Bottleneck Scene Generation</h1></center>
+<center><h2>Semantic Bottleneck Scene Generation</h2></center>
 <img src='imgs/SB-GAN-samples.jpg' align="center">
 
 

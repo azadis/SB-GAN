@@ -13,13 +13,6 @@ Semantic Bottleneck Scene Generation
   <span style="font-size:20pt"><a href="https://arxiv.org/abs/">[arXiv]</a>
   </center>
   </td>
-  <td width=50px align=center>
-  </td>
-  <td width=450px align=left>
-  <!-- <p style="margin-top:4px;"></p> -->
-  <!-- <p style="margin-top:20px;"></p> -->
-  <span style="font-size:20pt"><a shape="rect" href="javascript:togglebib('icml17_bib')" class="togglebib">[Bibtex]</a></span>
-  </td>
   </tr>
   </table>
 

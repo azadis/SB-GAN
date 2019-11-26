@@ -9,7 +9,7 @@ Coupling the high-fidelity generation capabilities of label-conditional image sy
   <tr>
   <td width=400px align=center>
   <!-- <p style="margin-top:4px;"></p> -->
-  <a href="https://people.eecs.berkeley.edu/~sazadi/SemanticGAN/thumbnail.jpg"><img style="height:200px" src="https://people.eecs.berkeley.edu/~sazadi/SemanticGAN/thumbnail.jpg"/></a>
+  <a href="https://people.eecs.berkeley.edu/~sazadi/SemanticGAN/main.pdf"><img style="height:200px" src="https://people.eecs.berkeley.edu/~sazadi/SemanticGAN/thumbnail.jpg"/></a>
   <center>
   <span style="font-size:20pt"><a href="https://people.eecs.berkeley.edu/~sazadi/SemanticGAN/main.pdf">[Paper 3.5MB]</a>&nbsp;
   <span style="font-size:20pt"><a href="https://arxiv.org/abs/">[arXiv]</a>

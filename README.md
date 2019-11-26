@@ -7,7 +7,7 @@
 <table align=center width=850px>
   <center><h1>Paper</h1></center>
   <tr>
-  <td width=400px align=center>
+  <td width=800px align=center>
   <!-- <p style="margin-top:4px;"></p> -->
   <a href="https://people.eecs.berkeley.edu/~sazadi/SemanticGAN/thumbnail.jpg"><img style="height:200px" src="https://people.eecs.berkeley.edu/~sazadi/SemanticGAN/thumbnail.jpg"/></a>
   <center>
@@ -18,5 +18,5 @@
   </tr>
   </table>
 <center><h1>Code</h1></center>
-To be released soon.
+Code will be released soon.
 

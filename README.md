@@ -12,7 +12,7 @@ Coupling the high-fidelity generation capabilities of label-conditional image sy
   <a href="https://people.eecs.berkeley.edu/~sazadi/SBGAN/main.pdf"><img style="height:200px" src="https://people.eecs.berkeley.edu/~sazadi/SBGAN/thumbnail.jpg"/></a>
   <center>
   <span style="font-size:20pt"><a href="https://people.eecs.berkeley.edu/~sazadi/SBGAN/main.pdf">[Paper 3.5MB]</a>&nbsp;
-  <span style="font-size:20pt"><a href="https://arxiv.org/abs/">[arXiv]</a>
+  <span style="font-size:20pt"><a href="https://arxiv.org/abs/1911.11357">[arXiv]</a>
   </center>
   </td>
   </tr>

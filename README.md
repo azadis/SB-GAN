@@ -32,6 +32,10 @@ pip install -r requirements.txt
 - Clone this repo with its submodules
 ```
 git clone --recurse-submodules -j8 https://github.com/azadis/SB-GAN.git
+cd SB-GAN/SPADE/models/networks/
+git clone https://github.com/vacancy/Synchronized-BatchNorm-PyTorch
+cp -rf Synchronized-BatchNorm-PyTorch/sync_batchnorm .
+cd ../../../../
 ```
 
 ## Datasets

@@ -1,0 +1,4 @@
+[submodule "SPADE"]
+	path = SPADE
+	url = https://github.com/azadis/SPADE.git
+        branch = SBGAN

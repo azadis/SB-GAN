@@ -1,0 +1,8 @@
+*.pyc
+*.ipynb_checkpoints
+SBGAN/samples
+SBGAN/logs
+SBGAN/weights
+SBGAN/datasets/*/
+SBGAN/data
+SBGAN/checkpoints

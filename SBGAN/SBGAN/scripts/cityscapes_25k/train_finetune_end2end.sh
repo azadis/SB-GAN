@@ -37,6 +37,10 @@ fi
 # =======================================
 ##COPY pretrained networks from their corresponding directories
 # =======================================
+if [ ! -d "${ckpt}/${name}" ]; then
+    mkdir "${ckpt}/${name}"
+fi
+
 pro_gan_pretrained="${ckpt}/${name_joint}_segment" 
 if [ ! -f "${ckpt}/${name}/${pro_iter}.pth" ]; then
     cp "${pro_gan_pretrained}/${pro_iter}.pth" "${ckpt}/${name}/"

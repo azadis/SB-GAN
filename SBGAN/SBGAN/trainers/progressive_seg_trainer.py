@@ -3,7 +3,6 @@ import datetime
 import torch
 from tensorboardX import SummaryWriter
 from torchvision import transforms
-from torchvision.datasets import STL10
 from torchvision.utils import make_grid, save_image
 
 import os,sys,inspect

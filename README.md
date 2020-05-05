@@ -40,7 +40,8 @@ cd ../../../../
 
 ## Datasets
 ### ADE-Indoor
-- To download the indoor images from the <a href="https://groups.csail.mit.edu/vision/datasets/ADE20K/">ADE20K dataset</a> and their corresponding segmentation maps used in our paper:
+- To have access to the indoor images from the <a href="https://groups.csail.mit.edu/vision/datasets/ADE20K/">ADE20K dataset</a> and their corresponding segmentation maps used in our paper:
+
 ```
 cd SB-GAN
 bash SBGAN/datasets/download_ade.sh

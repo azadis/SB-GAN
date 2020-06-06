@@ -261,6 +261,16 @@ class ProgressiveSegModel(torch.nn.Module):
             ret = y_soft
             return 0, ret
 
+    def inferenceSampler(self,fake, scaling, num_semantics):
+            index = fake.max(1, keepdim=True)[1]
+            x_fake_mc = torch.zeros_like(fake).scatter_(1, index, 1.0)
+            x_fake = index.type(torch.cuda.FloatTensor)
+            upsample = nn.Upsample(scale_factor=scaling, mode='nearest')
+
+            x_fake_mc = upsample(x_fake_mc)
+            x_fake = upsample(x_fake)
+            x_fake[x_fake > num_semantics-1]= 0
+            return x_fake, x_fake_mc
 
     def color_transfer(self, im):
         im = im.cpu().numpy()
@@ -268,13 +278,11 @@ class ProgressiveSegModel(torch.nn.Module):
         newcmp = ListedColormap(self.colormap/255.0)
         for i in range(im.shape[0]):
             img = (im[i,0,:,:]).astype('uint8')
-            # misc.imsave('/home/sazadi/bw.png', img)
             rgba_img = newcmp(img)
             rgb_img = PIL.Image.fromarray((255*np.delete(rgba_img, 3, 2)).astype('uint8'))
             tt = transforms.Compose([transforms.ToTensor(), 
                                     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
             rgb_img = tt(rgb_img)
-            # misc.imsave('/home/sazadi/seg.png',rgb_img.data.numpy().transpose(1,2,0))
             im_new[i,:,:,:] = rgb_img
         im_new = im_new.cuda()
         return im_new

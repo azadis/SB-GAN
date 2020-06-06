@@ -120,7 +120,6 @@ class ProgressiveTrainer:
 
 
     def call_next_batch(self, seg, im):
-        seg, _, im, _ = self.next_batch()
         seg= seg.cpu().numpy()
         if 'cityscapes' in self.opt.dataset and self.num_semantics==19:
             seg += 1
@@ -425,12 +424,12 @@ class ProgressiveTrainer:
             old2new[l] = new_label[l]
 
         input = input.numpy()
-        I = Image.fromarray(input[0,:,:].astype('uint8'))
+        I = PIL.Image.fromarray(input[0,:,:].astype('uint8'))
         I.save('samples/%s/%s_label35_%s_%s.png'%(self.opt.name, i*num_bs+j, self.progressive_model.dim, global_iteration))
 
         for ids in range(35):
             input= np.where(input==ids, old2new[ids], input)
-        input = Image.fromarray(input[0,:,:].astype('uint8'))
+        input = PIL.Image.fromarray(input[0,:,:].astype('uint8'))
         input.save('samples/%s/%s_label19_%s_%s.png'%(self.opt.name, i*num_bs+j, self.progressive_model.dim, global_iteration))
 
 

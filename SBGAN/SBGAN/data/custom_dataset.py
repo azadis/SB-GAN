@@ -141,7 +141,6 @@ class SupDataset(BaseDataset):
         if 'weighted' in self.dataset_name:
             if Y==1:
                 X_im = transforms.functional.crop(X_im, 0, 256, 768, 1536)
-
         if 'cityscapes' not in self.opt.dataset:
             X_im =transforms.functional.crop(X_im, j, i, size[0], size[1])
 
